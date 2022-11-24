@@ -1,3 +1,5 @@
+# サーバー立てる
+
 from n_detect import run
 from fastapi import FastAPI
 from pydantic import BaseModel
