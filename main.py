@@ -1,4 +1,4 @@
-from yolov5.n_detect import run
+from n_detect import run
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List
