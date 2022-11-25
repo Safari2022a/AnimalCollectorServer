@@ -7,7 +7,7 @@ services:
     restart: always
     tty: true
     ports:
-      - "3000:3000"
+      - "8000:8000"
     volumes:
       - ../:/app
     # command: "pip3 install -r requirements.txt"
