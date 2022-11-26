@@ -1,4 +1,4 @@
-import uvicorn
+# import uvicorn
 from yolov5.n_detect import run
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -40,4 +40,4 @@ def decodeImage(request):
 
     return img
 
-uvicorn.run(app, host="0.0.0.0", port=3000)
+# uvicorn.run(app, host="0.0.0.0", port=3000)
