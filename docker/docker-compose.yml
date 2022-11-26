@@ -2,12 +2,15 @@ version: '3'
 
 services:
   animal-collector:
-    image: continuumio/anaconda3:latest
+    build: 
+      context: .
+      dockerfile: Dockerfile
     container_name: animal-collector
     restart: always
     tty: true
+    expose:
+      - 6000
     ports:
-      - "8000:8000"
+      - 6000:6000
     volumes:
       - ../:/app
-    # command: "pip3 install -r requirements.txt"
